@@ -1,0 +1,52 @@
+.topic{
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    overflow-y: hidden;
+    transition: width,
+                border-radius;
+    transition-duration: 0.5s;
+}
+
+.topic img{
+    position: absolute;
+    top: 0;
+    margin: 25px 20px ;
+    width: 202px;
+    height: 135px;
+    border-color: 2px solid black ; 
+    object-fit: cover;
+    
+}
+
+.topic:hover img{
+    position: absolute;
+    height: 250px;
+    width: 380px;
+    border-radius: 15px;
+}
+
+
+.topic .description{
+    position: absolute;
+    font-size: 12px;
+    bottom: 0;
+    left: 0;
+    margin: 25px 20px ;
+    padding: 5px;
+    opacity: 1; 
+    transition: opacity 0.5s;
+}
+
+.topic:hover {
+    border: 1px solid black;
+   border-radius: 15px;
+   width: 430px;
+   height: 300px;
+  
+}
+
+.topic:hover .description {
+    opacity: 0; 
+}
